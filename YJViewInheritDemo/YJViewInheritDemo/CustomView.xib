@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -12,37 +12,47 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-Ww-SkX">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="DaC-ph-lWT"/>
+                        <constraint firstAttribute="height" constant="60" id="Y9v-rb-UuI"/>
+                    </constraints>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USn-bG-h49">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="RGB-Hi-HOt"/>
+                        <constraint firstAttribute="height" constant="20.5" id="Wko-dP-rzf"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-fl-bsb">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1oL-NE-dtm"/>
+                        <constraint firstAttribute="width" constant="46" id="v8M-Bh-aR4"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-Ww-SkX">
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="MG2-B5-tQO"/>
-                        <constraint firstAttribute="height" constant="60" id="qGB-AO-2W3"/>
-                    </constraints>
-                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Ef7-Ww-SkX" firstAttribute="top" secondItem="2gQ-AP-iis" secondAttribute="top" constant="86" id="0Rq-BQ-WyL"/>
-                <constraint firstItem="vWx-fl-bsb" firstAttribute="leading" secondItem="Ef7-Ww-SkX" secondAttribute="trailing" constant="8" id="6zz-ji-Z7G"/>
-                <constraint firstItem="USn-bG-h49" firstAttribute="centerX" secondItem="2gQ-AP-iis" secondAttribute="centerX" id="KI0-Gp-vHV"/>
-                <constraint firstItem="vWx-fl-bsb" firstAttribute="top" secondItem="USn-bG-h49" secondAttribute="bottom" constant="8" id="Lpi-w3-ZM2"/>
-                <constraint firstItem="vWx-fl-bsb" firstAttribute="centerX" secondItem="2gQ-AP-iis" secondAttribute="centerX" id="S4n-vu-HfH"/>
-                <constraint firstItem="USn-bG-h49" firstAttribute="centerY" secondItem="2gQ-AP-iis" secondAttribute="centerY" id="hiV-48-cvu"/>
+                <constraint firstItem="Ef7-Ww-SkX" firstAttribute="leading" secondItem="2gQ-AP-iis" secondAttribute="leading" constant="47" id="3Rv-U7-fm0"/>
+                <constraint firstItem="USn-bG-h49" firstAttribute="top" secondItem="2gQ-AP-iis" secondAttribute="top" constant="62" id="46n-Iu-a0Q"/>
+                <constraint firstItem="Ef7-Ww-SkX" firstAttribute="top" secondItem="2gQ-AP-iis" secondAttribute="top" constant="61" id="JzE-e2-SKv"/>
+                <constraint firstAttribute="trailing" secondItem="vWx-fl-bsb" secondAttribute="trailing" constant="137" id="MjC-A6-EI0"/>
+                <constraint firstAttribute="trailing" secondItem="USn-bG-h49" secondAttribute="trailing" constant="139" id="cxR-4W-Di5"/>
+                <constraint firstAttribute="bottom" secondItem="vWx-fl-bsb" secondAttribute="bottom" constant="72" id="g5B-UP-UbN"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="btn" destination="vWx-fl-bsb" id="Rwf-FQ-q5G"/>
+                <outlet property="imageView" destination="Ef7-Ww-SkX" id="AaN-lf-rQp"/>
                 <outlet property="lblText" destination="USn-bG-h49" id="iBE-L2-kTU"/>
             </connections>
-            <point key="canvasLocation" x="123.5" y="61.5"/>
+            <point key="canvasLocation" x="-33" y="40"/>
         </view>
     </objects>
     <resources>

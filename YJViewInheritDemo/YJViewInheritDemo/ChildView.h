@@ -10,6 +10,8 @@
 
 @interface ChildView : CustomView
 
--(id)initWithSuperView;
+//-(id)initWithSuperView;
+
+-(void)customMethod;
 
 @end

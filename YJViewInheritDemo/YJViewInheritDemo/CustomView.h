@@ -11,5 +11,7 @@
 @interface CustomView : UIView
 
 @property (nonatomic,strong) IBOutlet UILabel *lblText;
+@property (nonatomic,strong) IBOutlet UIImageView *imageView;
+@property (nonatomic,strong) IBOutlet UIButton *btn;
 
 @end

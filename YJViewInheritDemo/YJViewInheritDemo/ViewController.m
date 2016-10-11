@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ChildView.h"
+#import "UIView+YJInheritAdd.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     
     ChildView *cView = [[ChildView alloc] initWithSuperView];
+    cView.lblText.text = @"test";
     [self.view addSubview:cView];
     
     
