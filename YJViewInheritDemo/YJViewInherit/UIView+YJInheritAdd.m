@@ -37,15 +37,11 @@
         {
             //父类控件成员
             UIView *subView = [superView valueForKey:propertyName];
-            
             [self setValue:subView forKey:propertyName];
-            //[self addSubview:subView];
         }
     }
     
     [self addSubview:superView];
-    
-    //[self setNeedsDisplay];
     
     return self;
 }

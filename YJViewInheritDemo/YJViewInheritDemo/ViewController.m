@@ -22,6 +22,7 @@
     ChildView *cView = [[ChildView alloc] initWithSuperView];
     cView.lblText.text = @"test";
     [self.view addSubview:cView];
+    [cView customMethod];
     
     
     // Do any additional setup after loading the view, typically from a nib.
