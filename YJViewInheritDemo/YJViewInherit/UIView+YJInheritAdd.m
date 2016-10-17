@@ -16,18 +16,17 @@
     //子类
     self = [self init];
     
-    //反射获取父类
+    //runtime获取父类
     Class superClass = class_getSuperclass([self class]);
     NSString *sClassName = NSStringFromClass(superClass);
     UIView *superView = (UIView*)[[[NSBundle mainBundle] loadNibNamed:sClassName owner:self options:nil] lastObject];
     
     //初始化view属性
-    [self setFrame:CGRectMake(superView.frame.origin.x, superView.frame.origin.y,
-                              superView.frame.size.width, superView.frame.size.height)];
+    [self setFrame:superView.frame];
     
     self.backgroundColor = [superView backgroundColor];
     
-    //反射出父类成员，并加进子类中
+    //取出父类成员，并加进子类中
     unsigned propertyCount = 0;
     objc_property_t *properties = class_copyPropertyList([superView class], &propertyCount);
     for ( int i = 0 ; i < propertyCount ; i++ ) {
